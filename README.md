@@ -3,9 +3,11 @@ literally the worst mail app. please don't use this. passwords are stored in pla
 
 how to use (if you really want to)
 - make auth.txt with following contents:
-```<your email>
+```
+<your email>
 
-<your password>```
+<your password>
+```
 
 (hint for gmail users: use app password)
 - profit????
