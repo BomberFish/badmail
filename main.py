@@ -39,10 +39,9 @@ content=str(input("enter text> "))
 #TODO: multiple attachmets
 doAttach=str(input("add an attachment? (y/N)> "))
 if doAttach == "y":
-   attachment=str(input("enter absolute or relative path to attachment> "))
+   attachment=input("enter name of file (MUST BE IN CURRENT DIRECTORY!!)> ")
 else:
    attachment=0
 
-while True:
-  mail.send(to=recipient, subject=subject, contents=content, attachments=attachment)
-  print("sent!")
+mail.send(to=recipient, subject=subject, contents=content, attachments=attachment)
+print("sent!")
