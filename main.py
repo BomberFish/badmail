@@ -24,8 +24,9 @@ for n in range(1):
                exit()
 
 
-auth = open("auth.txt", "r") 
-mail = yagmail.SMTP(auth.read())
+authfile = open("auth.txt", "r") 
+authlines = authfile.readlines()
+mail = yagmail.SMTP(authlines[0], authlines[1])
 
 #TODO: multiple recipients
 recipient = str(input("enter recipient> "))
