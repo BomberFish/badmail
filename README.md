@@ -5,7 +5,6 @@ how to use (if you really want to)
 - make auth.txt with following contents:
 ```
 <your email>
-
 <your password>
 ```
 
